@@ -58,6 +58,27 @@ propiedad color https://www.w3schools.com/cssref/css_colors_legal.php
 
 	Colores predefinidos: blue, red, coral, brown, black, white, yellow, orange, cyan, pink... hasta 140 colores
 
+FUENTES
+Tipo:
+font-family: "Times New Roman", serif; <-- tipo de fuente, con comillas si tiene espacios + especificación o apellido
+	Si el navegador no detecta la fuente irá a la siguiente configurada, por lo que se pueden configurar varias
+
+Tamaños en puntos: dejas un espacio después de los dos puntos, pero no dejas ninguno entre el número y el "px":
+	font-size: 22px
+	font-weight: 700 (más weight más negrita, entre 1 y 1000; 700 equivale a negrita habitual)
+
+Alinear:
+text-align: center
+
+ALTO Y ANCHO EN IMAGEN
+Se pueden configurar ambos o dejar uno en auto.
+img {
+	height: auto;
+	width: 500px;
+}
+
+Aunque pongas tamaño a la imagen en el css, se recomienda dejar un tamaño orientativo en al imagen original, para que mientras carga la página vaya reservando ese espacio y no desplace después todos los objetos.
+
 
 
 
