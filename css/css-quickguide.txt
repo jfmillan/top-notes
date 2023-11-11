@@ -1,6 +1,37 @@
 *************************************
 Mis apuntes de CSS - the odin project
 *************************************
-div.bold-text {
+div.bold-text { <-------- selector
+	font-weight: 700; <-- propiedad: valor;
+}
+
+Selectores: 
+*, universal
+
+De tipo, p.ej div, para todo el tipo
+	div {
+		color: white;
+	}
+
+.class, de clase: puedes ponerle varias clases al mismo objeto
+
+#id, por identificador: único por objeto
+
+agrupar, pones tu selector con sus propiedades, otros selectores con las suyas, y luego puedes poner cuantos selectores juntos como quieras y añadirles más propiedades comunes.
+.selector1,
+.selector2 {
+	/* ... */
+}
+
+encadenantes, tienes varias clases y los separas en el selector con un .:
+class="subsection header"...
+.subsection.header {
+	/* ... */
+}
+
+
+
+
+
 
 
