@@ -1,2 +1,2 @@
 # top-notes
-The Odin Projec: notas y apuntes varios
+The Odin Project: notas y apuntes varios
