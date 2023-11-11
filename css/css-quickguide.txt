@@ -17,19 +17,46 @@ De tipo, p.ej div, para todo el tipo
 
 #id, por identificador: único por objeto
 
-agrupar, pones tu selector con sus propiedades, otros selectores con las suyas, y luego puedes poner cuantos selectores juntos como quieras y añadirles más propiedades comunes.
+Agrupar, pones tu selector con sus propiedades, otros selectores con las suyas, y luego puedes poner cuantos selectores juntos como quieras y añadirles más propiedades comunes.
 .selector1,
 .selector2 {
 	/* ... */
 }
 
-encadenantes, tienes varias clases y los separas en el selector con un .:
-class="subsection header"...
+Encadenantes, tienes varias clases y los separas en el selector con un . o con un # si es clase encadenada con id:
+class="subsection header"
+class="subsection" id="preview"
 .subsection.header {
-	/* ... */
+	color: red;
+}
+.subsection#preview {
+	color: blue;
 }
 
+Descendiente: separas las clases por un espacio, y solo aplica si para elementos que tienen ese arbol de descencendia (independiente del número de niveles en medio)
+<div class="ancestro">			<!--A-->
+	<div class="contenido"> 	<!--B-->
+		<div class="contenido">	<!--C-->
+		</div>
+	</div>
+</div>
+<div class="contenido">			<!--D-->
 
+.ancestro .contenido {
+	/* aplica a B y C, pero no a D pues no tiene el ancestro */
+}
+
+COLORES
+propiedad color https://www.w3schools.com/cssref/css_colors_legal.php
+	Hexadecimal: #1100ff
+	Hexadecimal con transparencia, añades un valor más: #1100ff80
+	
+	RGB, función rgb(100, 0, 127) o rgba (100, 0, 127, 0.3) para añadir transparencia.
+	HSL, función hsl(15, 82%, 56%) o hsla (15, 82%, 56%, 0.3) para añadir transparencia.
+
+	currentcolor, puntero al propio color; p.ej color: blue y luego border: currentcolor para señalar el mismo
+
+	Colores predefinidos: blue, red, coral, brown, black, white, yellow, orange, cyan, pink... hasta 140 colores
 
 
 
