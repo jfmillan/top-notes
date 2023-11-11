@@ -5,6 +5,32 @@ div.bold-text { <-------- selector
 	font-weight: 700; <-- propiedad: valor;
 }
 
+------------------
+APLICAR CSS A HTML
+------------------
+CSS externo: lo tienes en otro fichero y apuntas a él desde el html en el head con link:
+p.ej: fichero CSS styles.css
+<head>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+CSS interno: lo tienes dentro del propio html, dentro de head, con style
+<head>
+	<style>
+		div {
+			color: white;
+		}
+	</style>
+</head>
+
+CSS en línea: no va por tipo, ni por id, ni por clase, etc; afecta simplemente a esa línea.
+	nota: superpone cualquier otro método, útil para diferenciaciones.
+Obviamente, abusar de esto es mala práctica.
+<body>
+	<div style="color: white; background-color: black;">...</div>
+</body>
+------------------
+
 Selectores: 
 *, universal
 
