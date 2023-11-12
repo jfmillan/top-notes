@@ -5,6 +5,8 @@ div.bold-text { <-------- selector
 	font-weight: 700; <-- propiedad: valor;
 }
 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+
 ------------------
 APLICAR CSS A HTML
 ------------------
@@ -105,6 +107,8 @@ img {
 
 Aunque pongas tamaño a la imagen en el css, se recomienda dejar un tamaño orientativo en al imagen original, para que mientras carga la página vaya reservando ese espacio y no desplace después todos los objetos.
 
+
+NOTA IMPORTANTE: si aplican dos selectores, el último tiene preferencia.
 
 
 
