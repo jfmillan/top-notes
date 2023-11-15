@@ -108,7 +108,23 @@ img {
 Aunque pongas tamaño a la imagen en el css, se recomienda dejar un tamaño orientativo en al imagen original, para que mientras carga la página vaya reservando ese espacio y no desplace después todos los objetos.
 
 
-NOTA IMPORTANTE: si aplican dos selectores, el último tiene preferencia.
+********************************
+PRECEDENCIA EN CASO DE CONFLICTO
+******************************** 
+Por especifidad: más específico más preferencia:
+Por id > por clase > por tipo > *
+
+Se pueden combinar, por ejemplo uno por clase y otro con dos clases, tendrá preferencia el que tiene dos clases.
+
+Uno con clase y otro con clase y tipo, tendrá más preferencia este último.
+
+Caso particular por herencia: si tengo un elemento muy específico y otro hereda, pero tiene algo menos específico, tiene precedencia aún así la regla que va directa al elemento:
+<div id="parent">
+	<div class="child">
+
+si aplico una regla a parent también aplicaría a child... pero si child la sobreescribe a nivel de clase por ejemplo, child usará la que tiene "directamente" definida.
+
+Por útlimo, si aplican dos selectores en igualdad de condiciones y no hay forma de desempatar, el último tiene preferencia.
 
 
 
